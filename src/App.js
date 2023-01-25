@@ -1,21 +1,23 @@
 import React from "react";
-// import './App.css';
-import { Routes, Route } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
+import './App.css';
+// import { Routes, Route } from "react-router-dom";
+// import { BrowserRouter } from "react-router-dom";
 // import Child from './Componants/Child.jsx'
 // import CheckStatus from './Componants/ConditionalRendering/CheckStatus.jsx';
 // import PrepBytes from './Componants/ConditionalRendering/PrepBytes.jsx';
 
-import FirstComp from "./Componants/Routing/FirstComp";
-import FifthComp from "./Componants/Routing/FifthComp";
-import ThirdComp from "./Componants/Routing/ThirdComp";
-import FourthComp from "./Componants/Routing/FourthComp";
-import SecondComp from "./Componants/Routing/SecondComp";
-import PageNotFound from "./Componants/Routing/PageNotFound";
+// import FirstComp from "./Componants/Routing/FirstComp";
+// import FifthComp from "./Componants/Routing/FifthComp";
+// import ThirdComp from "./Componants/Routing/ThirdComp";
+// import FourthComp from "./Componants/Routing/FourthComp";
+// import SecondComp from "./Componants/Routing/SecondComp";
+// import PageNotFound from "./Componants/Routing/PageNotFound";
 
-import UseState from "./Componants/Hookss/UseState";
-import UseEffect from "./Componants/Hookss/UseEffect";
+// import UseState from "./Componants/Hookss/UseState";
+// import UseEffect from "./Componants/Hookss/UseEffect";
+// import FirstapiComponant from "./Componants/ContextApi/FirstapiComponant";
 
+import Apicall from "./Componants/ApiCalling/Apicall";
 
 // import { Route } from "react-router-dom";
 const App = () => {
@@ -46,7 +48,15 @@ const App = () => {
   // );
 
   // return(<UseState/>);
-  return(<UseEffect/>);
+  // return(<UseEffect/>);
+  // return(<FirstapiComponant/>);
+  return(<table>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+    </tr>
+    <Apicall/>
+  </table>);
 };
 
 export default App;
